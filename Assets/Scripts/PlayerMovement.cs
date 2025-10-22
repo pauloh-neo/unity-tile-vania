@@ -105,12 +105,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        if (myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        if (myBodyCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")) || myFeetCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
-            myRigidbody2D.linearVelocity = deathKick; 
+            myRigidbody2D.linearVelocity = deathKick;
         }
+
+        
+       
+        
     }
     
     void FadingEffect()

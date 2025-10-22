@@ -17,7 +17,7 @@ TagManager:
   - Mushroom
   - Ladder
   - Enemy
-  - 
+  - Hazards
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Platform
     uniqueID: 1512110303
+    locked: 0
+  - name: Hazards
+    uniqueID: 984357713
     locked: 0
   - name: Enemy
     uniqueID: 457829445
