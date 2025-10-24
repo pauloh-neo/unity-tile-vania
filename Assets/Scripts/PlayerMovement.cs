@@ -123,12 +123,22 @@ public class PlayerMovement : MonoBehaviour
         }
         
     }
-    
+
     void FadingEffect()
     {
         Color color = mySpriterenderer.color;
         color.a = Mathf.MoveTowards(color.a, targetAlpha, fadeSpeed * Time.deltaTime);
         mySpriterenderer.color = color;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Coin":
+                Destroy(collision.gameObject);
+                break;
+        }
     }
     
 }
