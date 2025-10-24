@@ -131,14 +131,5 @@ public class PlayerMovement : MonoBehaviour
         mySpriterenderer.color = color;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        switch (collision.gameObject.tag)
-        {
-            case "Coin":
-                Destroy(collision.gameObject);
-                break;
-        }
-    }
     
 }
