@@ -11,6 +11,7 @@ public class CoinPickUp: MonoBehaviour
         {
             Destroy(gameObject);
             AudioSource.PlayClipAtPoint(coinSfx, transform.position);
+            FindFirstObjectByType<GameSession>().Score();
         }
     }
 
