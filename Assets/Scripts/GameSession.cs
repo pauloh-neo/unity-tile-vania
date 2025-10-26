@@ -48,9 +48,9 @@ public class GameSession : MonoBehaviour
         }
     }
     
-    public void Score()
+    public void Score(int scorePoints)
     {
-        score += 100;
+        score += scorePoints;
         scoreText.text = score.ToString();
     }
 

@@ -5,13 +5,14 @@ using UnityEngine;
 public class CoinPickUp: MonoBehaviour
 {
     [SerializeField] AudioClip coinSfx;
+    [SerializeField] int scorePoints = 100;
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
             AudioSource.PlayClipAtPoint(coinSfx, transform.position);
-            FindFirstObjectByType<GameSession>().Score();
+            FindFirstObjectByType<GameSession>().Score(scorePoints);
         }
     }
 
