@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class SceneController : MonoBehaviour
+public class NextScene : MonoBehaviour
 {
     
     IEnumerator OnTriggerEnter2D(Collider2D collision)
@@ -20,6 +20,7 @@ public class SceneController : MonoBehaviour
             nextSceneIndex = 0;
         }
 
+        FindFirstObjectByType<ScenePersist>().ResetScenePersist();
         SceneManager.LoadScene(nextSceneIndex);
         
     }

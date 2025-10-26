@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8585460036503901730
+--- !u!1 &2874112712279428840
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8089189608993393923}
-  - component: {fileID: 1610507517078645090}
-  - component: {fileID: 3111778075859680479}
-  - component: {fileID: 161847222363942711}
+  - component: {fileID: 4046310038084889600}
+  - component: {fileID: 2829887887499898052}
+  - component: {fileID: 6031652976912457654}
   m_Layer: 15
   m_Name: Door
   m_TagString: Untagged
@@ -19,28 +18,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8089189608993393923
+--- !u!4 &4046310038084889600
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8585460036503901730}
+  m_GameObject: {fileID: 2874112712279428840}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1387672, y: -10.94, z: 0}
+  m_LocalPosition: {x: -15.11, y: 2.653, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1610507517078645090
+--- !u!212 &2829887887499898052
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8585460036503901730}
+  m_GameObject: {fileID: 2874112712279428840}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -78,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -198766759
-  m_SortingLayer: 5
+  m_SortingLayerID: 1512110303
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -7937464384187458154, guid: 52b94f1e3b9709649943e10effe5122f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -92,13 +91,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3111778075859680479
+--- !u!61 &6031652976912457654
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8585460036503901730}
+  m_GameObject: {fileID: 2874112712279428840}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -126,7 +125,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00000011920929, y: 0.011308372}
+  m_Offset: {x: -0.0036554337, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -136,17 +135,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9133384, y: 1.3026167}
+  m_Size: {x: 0.90711975, y: 1.28}
   m_EdgeRadius: 0
---- !u!114 &161847222363942711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8585460036503901730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 326e869096a72684a8c30942c526abcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneController

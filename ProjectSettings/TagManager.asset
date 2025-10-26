@@ -22,7 +22,7 @@ TagManager:
   - Hazards
   - Bullet
   - PickUps
-  - Door
+  - 
   - 
   - 
   - 
@@ -54,9 +54,6 @@ TagManager:
     locked: 0
   - name: PickUps
     uniqueID: 1920231613
-    locked: 0
-  - name: Door
-    uniqueID: 4096200537
     locked: 0
   - name: Enemy
     uniqueID: 457829445

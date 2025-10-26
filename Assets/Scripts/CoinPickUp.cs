@@ -6,13 +6,17 @@ public class CoinPickUp: MonoBehaviour
 {
     [SerializeField] AudioClip coinSfx;
     [SerializeField] int scorePoints = 100;
+
+    bool wasCollected = false;
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            Destroy(gameObject);
-            AudioSource.PlayClipAtPoint(coinSfx, transform.position);
+            wasCollected = true;
             FindFirstObjectByType<GameSession>().Score(scorePoints);
+            AudioSource.PlayClipAtPoint(coinSfx, transform.position);
+            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 
